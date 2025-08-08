@@ -1,0 +1,308 @@
+/* From Uiverse.io by vikiWayne */
+.button-hero {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.button-hero:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button-hero::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button-hero:hover::before {
+  width: 250%;
+}
+
+.header {
+  background-color: #1c3f45;
+}
+
+.header-title,
+.header-text {
+  color: #f0fdfd;
+}
+
+.footer-buttons {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+.our-services-about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0%;
+  margin: 0%;
+  max-width: 1500px;
+  gap: 50px;
+}
+.card-about-us {
+  --main-color: #fff;
+  --bg-color: linear-gradient(145deg, #2f3a4c, #506e7b);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  padding: 20px;
+  width: 220px;
+  background: var(--bg-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__wrapper-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .card__back-about-us svg,
+.card__menu-about-us svg {
+  width: 20px;
+  height: 20px;
+} */
+
+.card__img-about-us {
+  background: linear-gradient(90deg, #fff8f79a, #f0f7dfa2);
+  border-radius: 100%;
+  padding: 15px;
+  align-self: center;
+}
+
+.card__title-about-us {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.card__subtitle-about-us {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--main-color);
+  letter-spacing: 0.5px;
+}
+
+.services-section {
+  background: rgba(29, 43, 51, 0.1);
+  padding: 30px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.services-title-main {
+  margin-bottom: 50px;
+}
+
+.image-logos {
+  padding: 0%;
+  margin: 0%;
+}
+
+header a {
+  text-decoration: none;
+}
+
+.reviewsSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  max-width: 2000px;
+  flex-wrap: wrap;
+  padding: 0%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.all-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-photo {
+  position: absolute;
+  width: 120px;
+  padding: 0%;
+  top: -20px;
+  left: 180px;
+}
+.middle-content-task {
+  min-height: 120vh;
+}
+
+.pricing {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+
+  .plan {
+    background-color: rgba(50, 103, 51, 0.1);
+    padding: 2.5rem;
+    margin: 12px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .price {
+      margin-bottom: 1rem;
+      font-size: 30px;
+    }
+
+    ul.features {
+      list-style-type: none;
+      text-align: left;
+      li {
+        margin: 4px;
+        .fas {
+          margin-right: 4px;
+        }
+        .fa-check-circle {
+          color: #6ab04c;
+        }
+        .fa-times-circle {
+          color: #eb4d4b;
+        }
+      }
+    }
+
+    .price-button {
+      border: none;
+      width: 100%;
+      padding: 12px 35px;
+      margin-top: 1rem;
+      background-color: #2c9caf;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    &.popular {
+      border: 2px solid rgba(29, 43, 51, 0.5);
+      position: relative;
+      transform: scale(1.08);
+
+      span {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #2c9caf;
+        color: #fff;
+        padding: 4px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 5px 7px 67px -28px #268391;
+    }
+  }
+}
+
+.footer-custom {
+  background-color: #1c3f45;
+  height: 250px;
+}
+/* .footer-title-color{
+      margin-top: 10px;
+      color: #ead8c3;
+      font-family: 'myCustomFont';
+      font-size: large;
+} */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  padding: 0%;
+  justify-content: center;
+  align-items: stretch;
+  align-items: center;
+}
+.contact-info {
+  color: #ead8c3;
+  font-family: "myCustomFont";
+  font-size: medium;
+  padding: 0%;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+.logos-gallery {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  color: #ead8c3;
+}
+
+.reviews-title {
+  align-items: start;
+  align-self: left;
+  margin-bottom: -60px;
+  max-width: 1200px;
+  padding-left: 20px;
+}
+
+.review-section {
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .reviews-title {
+    padding-left: 100px;
+  }
+  .reviews-title {
+    align-self: center;
+    padding: 0%;
+  }
+}
